@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.eharmony.singles</groupId>
-  <artifactId>arrow-acceptance</artifactId>
+  <groupId>com.velocitypartners.net</groupId>
+  <artifactId>groovy-automation-example</artifactId>
   <version>0.1-SNAPSHOT</version>
 
   <properties>
@@ -16,7 +16,6 @@
     <proto-rest.version>1.0.8-SNAPSHOT</proto-rest.version>
     <spock.version>1.0-groovy-2.4</spock.version>
     <slf4j-version>1.7.5</slf4j-version>
-    <singles.acceptance.common.version>2.16-SNAPSHOT</singles.acceptance.common.version>
     <json.schema.validator.version>2.2.5</json.schema.validator.version>
     <json-unit.version>1.5.5</json-unit.version>
     <jedis.version>2.6.2</jedis.version>
@@ -24,31 +23,6 @@
 
     <test.includes>**/*Spec.*</test.includes>
   </properties>
-
-  <scm>
-    <connection>scm:git:git@github.corp.eharmony.com:qa/configuration_service-acceptance-service.git</connection>
-    <url>git@github.corp.eharmony.com:qa/configuration_service-acceptance-service.git</url>
-    <developerConnection>scm:git:git@github.corp.eharmony.com:qa/configuration_service-acceptance-service.git
-    </developerConnection>
-  </scm>
-
-  <!-- This is needed so that automated deployment will work -->
-  <distributionManagement>
-    <!-- use the following if you're not using a snapshot version. -->
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>internal-releases</id>
-      <name>eHarmony Releases Repo</name>
-      <url>https://repository.corp.eharmony.com/nexus/content/repositories/internal-releases</url>
-    </repository>
-    <!-- use the following if you ARE using a snapshot version. -->
-    <snapshotRepository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>internal-snapshots</id>
-      <name>eHarmony Snapshot Repo</name>
-      <url>https://repository.corp.eharmony.com/nexus/content/repositories/internal-snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
 
   <profiles>
     <profile>
