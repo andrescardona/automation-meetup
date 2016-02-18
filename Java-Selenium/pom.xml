@@ -4,18 +4,16 @@
   <artifactId>MeetUp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-<build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <artifactId>maven-resources-plugin</artifactId>
-              <version>2.7</version>
-            </plugin>           
-          </plugins>
-        </pluginManagement>   
-    </build>
 <dependencies>
-		<dependency>
+
+<dependency>
+<groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>2.7</version>
+
+</dependency>		
+
+<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
 			<artifactId>jersey-client</artifactId>
 			<version>2.21</version>
