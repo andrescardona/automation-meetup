@@ -1,1 +1,1 @@
-Initial commit
+Automation examples.
